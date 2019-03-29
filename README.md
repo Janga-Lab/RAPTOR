@@ -28,7 +28,7 @@ git clone https://github.iu.edu/anigovin/RAPTOR.git
 **Flags**
 
 
- Usage : raptor.py [-i < sam file >] [-b] [-hex] [-hum]
+ Usage : raptor.py [-i < sam file >] [-b] [-hex] [-hum] [-u]
  - `-i`,`--input` Input Sam file
  - `-b`,`--bases` Generate a csv file of nucleotide composition of UMR sequences
  - `-hex`,`--hexamer` Generate a csv file and plots of Hexamer frequencies in the UMR sequences
@@ -45,7 +45,7 @@ git clone https://github.iu.edu/anigovin/RAPTOR.git
 Once the repository has been downloaded, look for the file test_file.zip and unzip it which produces a test sam file.
 Run as follows :
       
-      python3 raptor.py -i test_file.sam -b -hex -u -hum
+      python3 raptor.py -i test_file.sam -b -hex -hum -u
 
 **Description of Output files** 
 
@@ -56,7 +56,7 @@ Run as follows :
 - Base_composition.csv - A csv file contating individual nucleotide composition for UMRs in each read
 - Hexamer_composition.csv - A csv file containing all possible hexamers and their percentage
 - Top_Hexamers.pdf - A distribution plot of top 15 hexamers from the list of Hexamers detected
-- UMR_analysis.cdv - A csv file containing information on UMR sequences and associated features(read coordinates, length, etc)  and annotation information
+- UMR_analysis.csv - A csv file containing information on UMR sequences and associated features(read coordinates, length, etc)  and annotation information
 - UMR_analysis.pdf - Analysis plots of UMR sequences 
 
 
